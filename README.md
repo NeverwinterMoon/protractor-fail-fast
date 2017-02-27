@@ -35,3 +35,8 @@ exports.config = {
 In order to facilitate communication between the test instances (and for the lack of a better known option), `protractor-fail-fast` writes to an empty file, `.protractor-failed`, whenever a test fails. The presence of this file triggers all other test instances to skip the rest of their tests. 
 
 The `init` and `clean` methods will remove this file, but it may still remain if, for example, the `afterLaunch` Protractor hook isn't executed due to an aborted test run. For that reason, it's recommended to add `.protractor-failed` to `.gitignore`.
+
+## Update 3.0.0
+This changes the default behavoir of the plugin when running multiple instances of Protractor. Before that version the plug-in would fail-fast all running instances, even if some other instances had no errors. It would have been the real fail-safe if it would halt all the queued specs, but it didn't, it would just fail the ones running in parallel at the point of failure and then launch the queue still.
+
+Now we fail fast only one spec, the remaining specs would continue running in parallel.

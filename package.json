@@ -1,6 +1,6 @@
 {
   "name": "protractor-fail-fast",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/protractor-fail-fast.js",
   "scripts": {
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Updater/protractor-fail-fast.git"
+    "url": "git://github.com/NeverwinterMoon/protractor-fail-fast.git"
   },
   "bugs": {
-    "url": "https://github.com/Updater/protractor-fail-fast/issues"
+    "url": "https://github.com/NeverwinterMoon/protractor-fail-fast/issues"
   },
-  "homepage": "https://github.com/Updater/protractor-fail-fast",
+  "homepage": "https://github.com/NeverwinterMoon/protractor-fail-fast",
   "peerDependencies": {
     "protractor": ">= 2.2.0"
   },
