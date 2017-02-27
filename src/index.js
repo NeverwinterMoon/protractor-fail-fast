@@ -40,9 +40,6 @@ export default {
   postTest: function(passed) {
     if (!passed) {
       setFailed();
-    }
-
-    if (hasFailed()) {
       disableSpecs();
     }
   }
